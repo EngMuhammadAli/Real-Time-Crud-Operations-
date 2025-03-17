@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\T14 GEN1\\source\\repos\\StudentFrontEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B39DB2A-EC1A-426E-AF80-12D0A34D10DF}|StudentFrontEnd\\StudentFrontEnd.csproj|c:\\users\\t14 gen1\\source\\repos\\studentfrontend\\studentfrontend\\services\\studenthubclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B39DB2A-EC1A-426E-AF80-12D0A34D10DF}|StudentFrontEnd\\StudentFrontEnd.csproj|solutionrelative:studentfrontend\\services\\studenthubclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B39DB2A-EC1A-426E-AF80-12D0A34D10DF}|StudentFrontEnd\\StudentFrontEnd.csproj|c:\\users\\t14 gen1\\source\\repos\\studentfrontend\\studentfrontend\\components\\student.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B39DB2A-EC1A-426E-AF80-12D0A34D10DF}|StudentFrontEnd\\StudentFrontEnd.csproj|solutionrelative:studentfrontend\\components\\student.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentHubClient.cs",
+              "DocumentMoniker": "C:\\Users\\T14 GEN1\\source\\repos\\StudentFrontEnd\\StudentFrontEnd\\Services\\StudentHubClient.cs",
+              "RelativeDocumentMoniker": "StudentFrontEnd\\Services\\StudentHubClient.cs",
+              "ToolTip": "C:\\Users\\T14 GEN1\\source\\repos\\StudentFrontEnd\\StudentFrontEnd\\Services\\StudentHubClient.cs",
+              "RelativeToolTip": "StudentFrontEnd\\Services\\StudentHubClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T17:10:03.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.razor",
+              "DocumentMoniker": "C:\\Users\\T14 GEN1\\source\\repos\\StudentFrontEnd\\StudentFrontEnd\\Components\\Student.razor",
+              "RelativeDocumentMoniker": "StudentFrontEnd\\Components\\Student.razor",
+              "ToolTip": "C:\\Users\\T14 GEN1\\source\\repos\\StudentFrontEnd\\StudentFrontEnd\\Components\\Student.razor",
+              "RelativeToolTip": "StudentFrontEnd\\Components\\Student.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-17T17:10:55.128Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

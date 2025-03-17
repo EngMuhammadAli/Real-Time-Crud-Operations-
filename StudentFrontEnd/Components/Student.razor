@@ -1,0 +1,74 @@
+﻿@page "/students"
+@using StudentFrontEnd.Models
+@inject HttpClient Http
+@inject StudentHubClient HubClient
+
+<h3>Student Management</h3>
+
+@if (HubClient.Students == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (var student in HubClient.Students)
+        {
+            <li>
+                @student.Studentname (@student.Studentage) - @student.Email
+                <button @onclick="() => EditStudent(student)">Edit</button>
+                <button @onclick="() => DeleteStudent(student.Studentid)">Delete</button>
+            </li>
+        }
+    </ul>
+}
+
+<h3>Add / Edit Student</h3>
+<input type="text" placeholder="Name" @bind="currentStudent.Studentname" />
+<input type="number" placeholder="Age" @bind="currentStudent.Studentage" />
+<input type="email" placeholder="Email" @bind="currentStudent.Email" />
+<button @onclick="SaveStudent">Save</button>
+
+@code {
+    private StudentsVm currentStudent = new StudentsVm();
+
+    protected override async Task OnInitializedAsync()
+    {
+        HubClient.OnStudentListChanged += StateHasChanged;
+        await HubClient.InitializeHubConnection();
+
+        List<StudentsVm> students = await Http.GetFromJsonAsync<List<StudentsVm>>("api/students");
+        HubClient.Students.AddRange(students);
+        StateHasChanged();
+    }
+
+    private async Task SaveStudent()
+    {
+        if (currentStudent.Studentid == 0)
+        {
+            await HubClient.AddStudent(Http, currentStudent);
+        }
+        else
+        {
+            await HubClient.UpdateStudent(Http, currentStudent);
+        }
+
+        currentStudent = new StudentsVm();
+    }
+
+    private void EditStudent(StudentsVm student)
+    {
+        currentStudent = new StudentsVm
+            {
+                Studentid = student.Studentid,
+                Studentname = student.Studentname,
+                Studentage = student.Studentage,
+                Email = student.Email
+            };
+    }
+
+    private async Task DeleteStudent(int studentId)
+    {
+        await HubClient.DeleteStudent(Http, studentId);
+    }
+}
